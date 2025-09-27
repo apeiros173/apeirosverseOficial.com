@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<section id="features" class="grid">
+<div class="feature card">
+<div class="icon">A</div>
+<div>
+<h3>Rápido</h3>
+<p>Tiempo de carga optimizado y CSS ligero para mantener buena performance.</p>
+</div>
+</div>
+
+
+<div class="feature card">
+<div class="icon">B</div>
+<div>
+<h3>Responsivo</h3>
+<p>Se adapta a móviles, tablets y escritorios usando simples media queries.</p>
+</div>
+</div>
+
+
+<div class="feature card">
+<div class="icon">C</div>
+<div>
+<h3>Accesible</h3>
+<p>Colores con contraste, navegación clara y elementos interactivos grandes.</p>
+</div>
+</div>
+</section>
+
+
+<section id="galeria" class="gallery">
+<img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=60" alt="Paisaje 1" class="card">
+<img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=60" alt="Paisaje 2" class="card">
+<img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=800&q=60" alt="Paisaje 3" class="card">
+</section>
+
+
+<section id="contacto" class="contact card">
+<form aria-label="Formulario de contacto" onsubmit="event.preventDefault(); alert('Gracias — formulario simulado');">
+<input type="text" placeholder="Tu nombre" aria-label="Nombre" required>
+<input type="email" placeholder="Correo electrónico" aria-label="Correo" required>
+<textarea placeholder="Mensaje" aria-label="Mensaje" required></textarea>
+<div style="display:flex;gap:.6rem;">
+<button class="btn" type="submit">Enviar</button>
+<button class="btn secondary" type="reset">Borrar</button>
+</div>
+</form>
+
+
+<aside style="padding:1rem">
+<h3>Contacto</h3>
+<p style="color:var(--muted)">Puedes dejar tu mensaje aquí o escribir a <strong>hola@apeirosverse.com</strong>.</p>
+<div style="margin-top:1rem;color:var(--muted);font-size:.95rem">Horario: Lun–Vie 9:00–18:00</div>
+</aside>
+</section>
+
+
+</main>
+
+
+<footer>
+<div>© ${new Date().getFullYear()} Apeirosverse. Todos los derechos reservados.</div>
+<div style="color:var(--muted);font-size:.95rem">Diseñado con ❤️ y CSS</div>
+</footer>
+</div>
+</body>
+</html>

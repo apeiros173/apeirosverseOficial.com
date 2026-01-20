@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background: #7d0000;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #550000;
+  padding-bottom: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* 🔹 LISTA DE UNIVERSOS */
+.universos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.universo-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.universo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* 🔹 IMAGEN REDONDA */
+.universo-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7d0000;
+}
+
+.universo-info h2 {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+  color: #7d0000;
+}
+
+.universo-info p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* 🔹 FOOTER */
+footer {
+  margin-top: 60px;
+  background: #7d0000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🔹 RESPONSIVE */
+@media (max-width: 600px) {
+  .universo-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.empty-msg {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 60px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universos | Apeirosverse</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Eventos Multiversales</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="universos.html">Megaversos</a>
+
+</nav>
+
+<main class="eventos-listado" id="eventos"></main>
+
+<footer>
+  <p>© 2026 Apeirosverse</p>
+</footer>
+
+<!-- DATA -->
+<script src="eventos.js"></script>
+
+<!-- LÓGICA -->
+<script>
+const contenedor = document.getElementById("eventos");
+
+UNIVERSOS.forEach(u => {
+  const evento = document.createElement("article");
+  evento.className = "evento-card";
+
+  evento.innerHTML = `
+    <img src="${u.image}" alt="${u.title}">
+    <h2>${u.title}</h2>
+    <p>${u.description}</p>
+    <a href="events.html?id=${u.id}">Explorar universo</a>
+  `;
+
+  contenedor.appendChild(evento);
+});
+</script>
+
+</body>
+</html>
